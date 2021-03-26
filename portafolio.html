@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+	<title>Portafolio Dinamico - Carlos Arturo</title>
+</head>
+<body>
+	
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Luis Cifuentes</h1>
+				<p>Estudiante</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Nintendo</a>
+				<a href="#">Play Station</a>
+				<a href="#">Xbox</a>
+				<a href="#">PC</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="nintendo"
+				 data-etiquetas="pelea de mario1"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/mario1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="play station"
+				 data-etiquetas="padre e hijo posando god1"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/god1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="xbox"
+				 data-etiquetas="persona con un perro a la par maincra1"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/maincra1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="pc"
+				 data-etiquetas="personas juntas lol1"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/lol1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="pc"
+				 data-etiquetas="personas en un tanke warzone1"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/warzone1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="play station"
+				 data-etiquetas="chrash1 en carros"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/chrash1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="xbox"
+				 data-etiquetas="halo1 posando"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/halo1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="nintendo"
+				 data-etiquetas="mario2 en carros"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img1/mario2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="play station"
+				 data-etiquetas="tomb1 posando"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="img1/tomb1.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://twitter.com/?lang=es" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://es-la.facebook.com/colegiocescsp/" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://www.instagram.com/?hl=es" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por <a href="#">Luis Cifuentes</a> - <a href="https://colegiocesc.edu.gt/campus/index.php">Colegio C.E.S.C.</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
